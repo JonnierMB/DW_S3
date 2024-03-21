@@ -1,0 +1,156 @@
+[type="Lucida_Bright"] {
+    font-size: 40px;
+    color: rgb(48, 38, 26);
+    text-align: center;
+    font-family: "Lucida Handwriting";
+    margin: 20px;
+    padding: 10px;
+}
+
+/*.img-container{Caracteristicas de la imagen
+    position: relative;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+/*.container img{Caracteristicas de la imagen  
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}*/
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.flex-second-container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 0;
+}
+
+a {
+    text-decoration-line: none;
+    color: rgb(48, 38, 26);
+    padding: 8px;
+}
+
+.flex-item {
+    padding: 5px;
+    margin: 5px;
+}
+
+header {
+    text-align: left;
+
+    background-color: rgb(48, 38, 26);
+    border: 2px solid rgb(48, 38, 26);
+    font-weight: bold;
+
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+
+    text-align: right;
+    background-color: rgb(228, 214, 195);
+    font-size: 18px;
+    font-weight: bold;
+
+    margin: 5px;
+}
+
+main {
+    background-color: rgb(238, 229, 218);
+    /* border-left:2px solid black;
+    border-right:2px solid black;
+    border-bottom:2px solid black;
+    border-top:2px solid rgb(230, 240, 230);  */
+}
+
+body {
+
+    background-color: rgb(37, 46, 45);
+    margin: 0px;
+}
+
+footer {
+
+    background-color: rgb(230, 240, 230);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-top: 2px solid rgb(230, 240, 230);
+}
+
+
+.background-img {
+    background-image: url(https://www.bbva.com/wp-content/uploads/2021/03/noruega.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    height: 640px;
+    max-width: 1920px;  /* delimitar una imagen */
+}
+
+.h1-flex {
+    border: 3px solid rgb(48, 38, 26);
+    border-radius: 20px;
+    background-color: rgb(228, 214, 195);
+    padding: 3px;
+    color: rgb(48, 38, 26);
+    margin: auto auto;
+    text-align: center;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+
+.hoover-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 100px 380px);
+    gap: 10px; 
+    margin-bottom: 85px; 
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+.hoover-container > div{
+    border:2px solid black;
+    background-color: rgb(87, 87, 163);
+    border-radius: 20px;
+}
+.hoover-container > div>p{
+    border:2px solid black;
+    text-align: center;
+    font-family: "Lucida Handwriting";
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+body::-webkit-scrollbar {
+    width: 15px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(228, 214, 195);
+    /* color of the tracking area */
+    border: 3px solid rgb(48, 38, 26);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(228, 214, 195);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 5px solid rgb(48, 38, 26);
+    /* creates padding around scroll thumb */
+}
