@@ -3,24 +3,27 @@
     color: rgb(48, 38, 26);
     text-align: center;
     font-family: "Lucida Handwriting";
-    margin: 20px;
-    padding: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+.features-section{
+    margin-top: 100px;
+}
+.destinos{
+    font-size: 34px;
+    color: rgb(48, 38, 26);
+    text-align: center;
+    font-family: "Lucida Handwriting";
+
 }
 
-/*.img-container{Caracteristicas de la imagen
-    position: relative;
-    width:100%;
-    height:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}*/
+.ptext{
+    text-align: center;
+    color: rgb(48, 38, 26);
+    font-size: 25px;
 
-/*.container img{Caracteristicas de la imagen  
-    width: 100%;
-    height: auto;
-    z-index: 1;
-}*/
+}
+
 .flex-container {
     display: flex;
     justify-content: space-between;
@@ -51,7 +54,7 @@ header {
     border: 2px solid rgb(48, 38, 26);
     font-weight: bold;
 
-    position: fixed;
+
     width: 100%;
 }
 
@@ -67,27 +70,13 @@ nav {
 
 main {
     background-color: rgb(238, 229, 218);
-    /* border-left:2px solid black;
-    border-right:2px solid black;
-    border-bottom:2px solid black;
-    border-top:2px solid rgb(230, 240, 230);  */
 }
 
 body {
-
-    background-color: rgb(37, 46, 45);
+    overflow-x: hidden;
+    background-color: rgb(238, 229, 218);
     margin: 0px;
 }
-
-footer {
-
-    background-color: rgb(230, 240, 230);
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-    border-top: 2px solid rgb(230, 240, 230);
-}
-
 
 .background-img {
     background-image: url(https://www.bbva.com/wp-content/uploads/2021/03/noruega.jpg);
@@ -97,7 +86,10 @@ footer {
     width: 100%;
     height: 640px;
     max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: auto auto;
 }
+
 
 .h1-flex {
     border: 3px solid rgb(48, 38, 26);
@@ -111,29 +103,172 @@ footer {
 }
 
 
-.hoover-container{
+.hover-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 100px 380px);
-    gap: 10px; 
-    margin-bottom: 85px; 
-    margin-right: 10px;
-    margin-left: 10px;
+    gap: 30px;
+    margin-bottom: 85px;
+    margin-right: 30px;
+    margin-left: 30px;
 
 }
-.hoover-container > div{
-    border:2px solid black;
-    background-color: rgb(87, 87, 163);
-    border-radius: 20px;
-}
-.hoover-container > div>p{
-    border:2px solid black;
+
+
+.hover-container > div> h1{
     text-align: center;
     font-family: "Lucida Handwriting";
     font-weight: bold;
     font-size: 30px;
+    color: rgb(48, 38, 26);
+}
+.container-figure1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
+.hover-container > div>a{
+ margin: auto auto;
+ padding: 0px;
+ width:100%;
+ height:100%;
+}
+
+.img-border{
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+
+    width:100%;
+    height:100%;
+}
+
+.background-img2 {
+    background-image: url(https://media.traveler.es/photos/61375f264c612f07ec39851d/16:9/w_1856,h_1044,c_limit/212929.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+
+}
+
+.background-img3 {
+    background-image: url(https://travelfine.es/wp-content/uploads/2023/10/73.1-que-ver-en-dinamarca.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+
+}
+
+.background-img4 {
+    background-image: url(https://www.universal-assistance.com/uablog/wp-content/uploads/2022/12/London-bridge.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+
+}
+
+.background-img5 {
+    background-image: url(https://media.admagazine.com/photos/64139d2266db29cbdee8df0d/3:2/w_3000,h_2000,c_limit/Cartagena%20Colombia.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+
+}
+
+.background-img6 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Cidade_Maravilhosa.jpg/1200px-Cidade_Maravilhosa.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+
+}
+
+.background-img7 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Copacabana%2C_Bolivia_at_sunset_cropped.jpg/950px-Copacabana%2C_Bolivia_at_sunset_cropped.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+
+}
+
+.layer1{
+    width:100%;
+    height:100%;
+    background-color: rgba(48, 38, 26, 0.6);
+    transition: all 250ms ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    border-radius: 10px;
+}
+.layerText{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    margin: 130px auto;
+    text-align: center;
+}
+.container-text{
+    width:100%;
+    height:100%;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    background-color: rgba(48, 38, 26, 0.4);
+    border-radius: 10px;
+}
+
+.hover-container > .container-figure1 > a > .background-img2:hover  > .layer1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hover-container > .container-figure1 > a > .background-img3:hover > .layer1 {
+    opacity: 1;
+    visibility: visible;
+}
+.hover-container > .container-figure1 > a > .background-img4:hover > .layer1 {
+    opacity: 1;
+    visibility: visible;
+}
+.hover-container > .container-figure1 > a > .background-img5:hover > .layer1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hover-container > .container-figure1 > a > .background-img6:hover > .layer1 {
+    opacity: 1;
+    visibility: visible;
+}
+.hover-container > .container-figure1 > a > .background-img7:hover > .layer1 {
+    opacity: 1;
+    visibility: visible;
+}
 
 body::-webkit-scrollbar {
     width: 15px;
@@ -154,3 +289,4 @@ body::-webkit-scrollbar-thumb {
     border: 5px solid rgb(48, 38, 26);
     /* creates padding around scroll thumb */
 }
+
