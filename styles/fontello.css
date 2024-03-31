@@ -23,11 +23,11 @@
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
-  speak: never;
+
 
   display: inline-block;
   text-decoration: inherit;
-  width: 2em;
+  width: 3em;
   margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
@@ -37,12 +37,12 @@
   text-transform: none;
 
   /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
+  line-height: 2em;
 
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   margin-left: .2em;
-
+  margin-top: .5em;
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
 

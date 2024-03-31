@@ -2,7 +2,43 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+[type="Lucida_Bright"] {
+    font-size: 40px;
+    color: rgb(48, 38, 26);
+    text-align: center;
+    font-family: "Lucida Handwriting";
+    margin: 0px;
+    padding: 0px;
+}
+
+.features-section{
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+.destinos{
+    font-size: 34px;
+    color: rgb(48, 38, 26);
+    text-align: center;
+    font-family: "Lucida Handwriting";
+
+}
+.destinos2{
+    font-size: 20px;
+    color: rgb(48, 38, 26);
+    text-align: center;
+    font-family: "Lucida Handwriting";
+    margin-bottom: 30px;
+
+}
+.ptext{
+    text-align: center;
+    color: rgb(48, 38, 26);
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
 .flex-container {
     display: flex;
     justify-content: space-between;
@@ -20,7 +56,87 @@
 }
 .flex-item2 {
     padding: 10px;
+    margin: 0px;
+}
+.flex-item a {
+    text-decoration-line: none;
+    color: rgb(48, 38, 26);
+    padding: 8px;
+}
+
+header {
+    text-align: left;
+
+    background-color: rgb(48, 38, 26);
+    border: 2px solid rgb(48, 38, 26);
+    font-weight: bold;
+
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+}
+a {
+    text-decoration-line: none;
+    color: rgb(48, 38, 26);
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+a:hover{
+    border: 2px solid rgb(48, 38, 26);
+}
+.auxiliar{
+    text-align: left;
+    background-color: rgb(48, 38, 26);
+    border: 2px solid rgb(48, 38, 26);
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 85px;
+}
+body {
+    overflow-x: hidden;
+    background-color: rgb(238, 229, 218);
+    margin: 0px;
+}
+
+.nav-items {
+
+    text-align: right;
+    background-color: rgb(228, 214, 195);
+    font-size: 18px;
+    font-weight: bold;
+
     margin: 5px;
+} 
+.h1-flex {
+    padding: 3px;
+    color: rgb(255, 255, 255);
+    margin-top: 200px;
+    text-align: center;
+}
+.layer1{
+    width:100%;
+    height:100%;
+    background-color: rgba(48, 38, 26, 0.6);
+    transition: all 250ms ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    
+
+}
+.layerText{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    margin: 50px auto;
+    text-align: center;
+}
+
+.background-img:hover  > .layer1 {
+    opacity: 1;
+    visibility: visible;
 }
 
 .background-img  {
@@ -29,7 +145,7 @@
     background-repeat: no-repeat;
     display: flex;
     width: 100%;
-    height: 840px;
+    height: 680px;
     max-width: 1920px;  /* delimitar una imagen */
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
     margin: auto auto;
@@ -53,6 +169,7 @@ label{
     transition: all 250ms ease;
     opacity: 0;
     visibility: hidden;
+    z-index: 5;
     
 }
 #flex-item2:checked ~ .container-menu{
@@ -71,7 +188,7 @@ label{
     text-align: center;
 }
 .nav-menu nav{
-    transform: translateY(15%);
+    transform: translateY(20%);
 }
 
 
@@ -93,10 +210,12 @@ label{
     top: 10px;
     color: rgb(228, 214, 195);
     cursor: pointer;
-    font-size: 18px;
+    font-size: 25px;
     font-family: Arial;
     font-weight: 700;
 }
+
+
 body::-webkit-scrollbar {
     width: 15px;
     /* width of the entire scrollbar */
@@ -115,4 +234,735 @@ body::-webkit-scrollbar-thumb {
     /* roundness of the scroll thumb */
     border: 5px solid rgb(48, 38, 26);
     /* creates padding around scroll thumb */
+}
+
+.background-img1  {
+    background-image: url(https://tur43.es/wp-content/uploads/2022/10/AdobeStock_169422198-1024x682.jpeg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 0;
+    display: flex;
+    width: 530px;
+    height: 330px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+    margin-right: 10px;
+}
+.background-img2  {
+    background-image: url(https://viajes.nationalgeographic.com.es/medio/2023/09/20/lofoten-boreal_04cb6545_230920195855_1280x880.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    width: 580px;
+    height: 390px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+}
+
+.background-img3  {
+    background-image: url(https://res.cloudinary.com/simpleview/image/upload/v1574085889/clients/norway/bryggen_wharf_bergen_hordaland_fjord_norway_photo_florian_olbrechts_34ad36ea-f7bc-4150-b48b-af2c2c14628f.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 640px;
+    height: 420px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 20px 0;
+    
+}
+
+.background-img4  {
+    background-image: url(https://viajerosocultos.com/wp-content/uploads/2021/06/colorful-old-houses-at-the-nidelva-river-embankment-in-the-center-of-trondheim-old-town-norway.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 600px;
+    height: 300px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 20px 0;
+}
+
+.background-img5  {
+    background-image: url(https://i0.wp.com/passporterapp.com/es/blog/wp-content/uploads/2022/03/islas-lofoten.jpg?resize=1140%2C761&ssl=1);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 820px;
+    height: 260px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: auto auto;
+
+}
+
+.h1-flex2 {
+    padding: 3px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 35px auto;
+}
+.layer2{
+    width:100%;
+    height:100%;
+    background-color: rgba(48, 38, 26, 0.5);
+    transition: all 250ms ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.7);
+
+}
+.layerText2{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    margin: auto auto;
+    text-align: center;
+}
+
+.background-img1:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img2:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img3:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img4:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img5:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.column{
+    flex:25%;
+    padding: 5px;
+}
+
+.background-img6  {
+    background-image: url(https://i.pinimg.com/originals/6f/ca/e3/6fcae30f963d663f6b1d5991730df388.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    height: 680px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: auto auto;
+}
+
+.background-img6:hover  > .layer1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.background-img7  {
+    background-image: url(https://img.rtve.es/imagenes/big-ben-turismo-historia-curiosidades-visita-londres/1695890979514.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    width: 630px;
+    height: 330px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+}
+
+.background-img8  {
+    background-image: url(https://i0.wp.com/www.lopezdoriga.com/wp-content/uploads/2015/08/Museo-Historia-Natural-Gobierno-Reino-Unido.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 590px;
+    height: 390px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+    
+}
+
+.background-img9  {
+    background-image: url(https://offloadmedia.feverup.com/secretldn.com/wp-content/uploads/2018/10/18115918/Urban-wonders-6-1024x817.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 640px;
+    height: 420px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 20px 0;
+}
+
+.background-img10  {
+    background-image: url(https://img.travesiasdigital.com/2019/08/londres-ciudad-parque-nacional.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 650px;
+    height: 300px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: auto auto;
+
+}
+
+.background-img11  {
+    background-image: url(https://media.traveler.es/photos/613767b1d4923f67e298e76b/master/w_1600%2Cc_limit/156502.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 820px;
+    height: 260px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: auto auto;
+
+}
+
+.background-img7:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img8:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img9:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img10:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img11:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.background-img12  {
+    background-image: url(https://w.forfun.com/fetch/b0/b018328d983aba2d84c19fa76525168d.jpeg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    width: 100%;
+    height: 680px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: auto auto;
+}
+
+.background-img12:hover  > .layer1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.background-img13{
+    background-image: url(https://www.panavision-tours.com/viajes/copenhague-dinamarca/copenhague-turismo.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    width: 630px;
+    height: 330px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+}
+
+.background-img14  {
+    background-image: url(https://i.pinimg.com/originals/b9/e5/07/b9e507163093d68a6e31788cc2b3c527.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 590px;
+    height: 390px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+    
+}
+
+.background-img15  {
+    background-image: url(https://media.architecturaldigest.com/photos/5bfc252a54719d268fefcf70/16:9/w_2560%2Cc_limit/GettyImages-926737750.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 640px;
+    height: 320px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 20px 0px;
+}
+
+.background-img16  {
+    background-image: url(https://media.traveler.es/photos/61703a5f216a21da2b245d21/1:1/w_1335,h_1335,c_limit/RC11WH.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 650px;
+    height: 470px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 0px auto;
+    margin-left: 0;
+    margin-bottom: 10px;
+
+}
+
+.background-img17  {
+    background-image: url(https://www.llegarsinavisar.com/wp-content/uploads/2021/08/skagen-1.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 820px;
+    height: 260px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: auto auto;
+
+}
+
+.background-img13:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img14:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img15:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img16:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img17:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.background-img18  {
+    background-image: url(https://media.admagazine.com/photos/64139d2266db29cbdee8df0d/3:2/w_3000,h_2000,c_limit/Cartagena%20Colombia.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    width: 100%;
+    height: 680px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: auto auto;
+}
+
+.background-img18:hover  > .layer1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.background-img19{
+    background-image: url(https://a.travel-assets.com/findyours-php/viewfinder/images/res70/63000/63109-Bogota.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    width: 630px;
+    height: 330px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+    margin-right: 0px;
+}
+
+.background-img20  {
+    background-image: url(https://lonelyplanetes.cdnstatics2.com/sites/default/files/styles/max_1300x1300/public/blog/turismosostenible_comunidad_colombia_medellin_4_winnercard-500pxrf_110891847_sergio_lubezky_500px.jpg?itok=_uAWNKRu);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 590px;
+    height: 290px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+    margin-left: 0px;
+}
+
+.background-img21  {
+    background-image: url(https://c0.wallpaperflare.com/preview/1022/246/466/cartagena-colombia-trip-caribbean.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 420px;
+    height: 620px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+    margin-right: 0px;
+}
+
+.background-img22  {
+    background-image: url(https://trayectoriasenviaje.com/wp-content/uploads/2022/05/pueblos_eje_cafetero_santa_rosa.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 650px;
+    height: 430px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 0px auto;
+    margin-left: 0;
+    margin-bottom: 10px;
+
+}
+
+.background-img23  {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/76/Cabo_San_Juan%2C_Colombia.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 620px;
+    height: 260px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: auto auto;
+}
+.background-img24 {
+    background-image: url(https://www.nationalgeographic.com.es/medio/2022/09/16/selva-tropical-amazonica-ecuador_135ea5a5_1280x853.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 620px;
+    height: 260px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: auto auto;
+}
+
+.background-img19:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img20:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img21:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img22:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img23:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img24:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.background-img25  {
+    background-image: url(https://wallpapercave.com/wp/geRbrVa.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    width: 100%;
+    height: 680px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: auto auto;
+}
+
+.background-img25:hover  > .layer1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.background-img26{
+    background-image: url(https://media.tacdn.com/media/attractions-content--1x-1/0b/2b/fc/2a.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    width: 730px;
+    height: 230px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+    margin-right: 0px;
+    margin-top: 100px;
+}
+
+.background-img27  {
+    background-image: url(https://mediaim.expedia.com/destination/1/2de1f7deeba668ec7615f16fde6134ab.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 690px;
+    height: 390px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+    margin-right: 0px;
+    margin-top: 100px;
+}
+
+.background-img28  {
+    background-image: url(https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/ihko5t5ookxfm6wqll3v);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 620px;
+    height: 410px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+    margin-left: 0px;
+}
+
+.background-img29  {
+    background-image: url(https://www.expreso.info/files/2022-08/Brasil_Bonito.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 750px;
+    height: 410px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 0px auto;
+    margin-left: 0;
+    margin-bottom: 10px;
+
+}
+
+.background-img30  {
+    background-image: url(https://www.clarin.com/img/2022/04/01/jZZsc1EKF_2000x1500__1.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 620px;
+    height: 460px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: auto auto;
+
+}
+.background-img31 {
+    background-image: url(https://viagemeturismo.abril.com.br/wp-content/uploads/2022/05/waterfall-g14a4a7585_1920.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 720px;
+    height: 460px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: auto auto;
+    margin-top: 0px;
+}
+
+.background-img26:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img27:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img28:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img29:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img30:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img31:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.background-img32  {
+    background-image: url(/image/1.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    width: 100%;
+    height: 680px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: auto auto;
+}
+
+.background-img32:hover  > .layer1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.background-img33{
+    background-image: url(https://www.cideu.org/wp-content/uploads/2019/12/la-paz-2-1.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    width: 730px;
+    height: 230px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+    margin-right: 0px;
+    margin-top: 100px;
+}
+
+.background-img34{
+    background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/28/9f/2b/lago-titicaca.jpg?w=1200&h=-1&s=1);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 690px;
+    height: 390px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+    margin-right: 0px;
+    margin-top: 100px;
+}
+
+.background-img35{
+    background-image: url(https://media.vogue.mx/photos/5e20d39107b0840008ae251e/master/w_1600%2Cc_limit/Salar-de-Uyuni--estrellas--Bolivia.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 620px;
+    height: 410px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+    margin-left: 0px;
+}
+
+.background-img36{
+    background-image: url(https://www.ganasdemundo.com/wp-content/uploads/2020/04/potosi-8-scaled.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 750px;
+    height: 410px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: 0px auto;
+    margin-left: 0;
+    margin-bottom: 10px;
+
+}
+
+.background-img37{
+    background-image: url(https://www.kayak.com.co/rimg/dimg/17/7e/83cc69db-city-32209-17079373d71.jpg?width=1366&height=768&xhint=2941&yhint=1925&crop=true);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 620px;
+    height: 340px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: auto auto;
+
+}
+.background-img38{
+    background-image: url(https://ahoraelpueblo.bo/images/noticias/politica/2023/05/Amazonia.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 720px;
+    height: 360px;
+    max-width: 1920px;  /* delimitar una imagen */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+    margin: auto auto;
+    margin-top: 0px;
+}
+
+.background-img33:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img34:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img35:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img36:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img37:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
+}
+.background-img38:hover  > .layer2 {
+    opacity: 1;
+    visibility: visible;
 }
